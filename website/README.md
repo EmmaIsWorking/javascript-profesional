@@ -3,13 +3,15 @@
 ## Dependencias
 `npm install -D live-server`
 
+***
+
 ## Conceptos
 *DOM*: representación que hace el navegador de un documento HTML.
 
 *DOMContentLoaded*: evento que significa que todo el documento está disponible para ser manipulado.
 
 *async*: Con async podemos hacer la petición de forma asíncrona y no vamos a detener la carga del DOM hasta que se haga la ejecución del código.
-  
+
 *defer*: La petición es igual asíncrona como en el async pero va a deferir la ejecución del Javascript hasta el final de que se cargue todo el documento.
 
 ---
@@ -35,7 +37,29 @@ Cuando se denota un script de tipo module con el atributo type="module las varia
 Nos sirven para tener algo parecido a variables privadas, característica que no tiene JavaScript por default. Es decir encapsulan variables que no pueden ser modificadas directamente por otros objetos, sólo por funciones pertenecientes al mismo.
 IIFE: Expresión de función ejecutada inmediatamente
 
+---
+
+### This
+`this` se refiere a un objeto, ese objeto es el que actualmente está ejecutando un pedazo de código.
+
+- Cuando llamamos a `this` en el Global Scope o Function Scope, se hace referencia al objeto window. A excepción de cuando estamos en strict mode que nos regresará undefined.
+- Cuando llamamos a `this` desde una función que está contenida en un objeto, `this` se hace referencia a ese objeto.
+- Cuando llamamos a `this` desde una “clase”, se hace referencia a la instancia generada por el constructor.
+
+---
+### Los métodos call, apply y bind
+Las funciones *call, apply y bind* son parte del prototipo Function. Toda función usa este prototipo y por lo tanto tiene estas tres funciones.
+
+- *functionName.call()*. Ejecuta la función recibiendo como primer argumento el this y los siguientes son los argumentos que recibe la función que llamó a call.
+- *functionName.apply()*. Ejecuta la función recibiendo como primer argumento el this y como segundo un arreglo con los argumentos que recibe la función que llamó a apply.
+- *functionName.bind()*. Recibe como primer y único argumento el this. No ejecuta la función, sólo regresa otra función con el nuevo this integrado.
+
+
+***
+
 ## Enlaces
 [HTMLMediaElement](https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement)
 
 [IFFE](https://developer.mozilla.org/es/docs/Glossary/IIFE)
+
+[NodeList](https://developer.mozilla.org/es/docs/Web/API/NodeList)
