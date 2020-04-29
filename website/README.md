@@ -54,6 +54,16 @@ Las funciones *call, apply y bind* son parte del prototipo Function. Toda funci�
 - *functionName.apply()*. Ejecuta la función recibiendo como primer argumento el this y como segundo un arreglo con los argumentos que recibe la función que llamó a apply.
 - *functionName.bind()*. Recibe como primer y único argumento el this. No ejecuta la función, sólo regresa otra función con el nuevo this integrado.
 
+---
+
+### Prototype
+*prototype chain*: Todos los objetos “heredan” de un prototipo que a su vez hereda de otro prototipo y así sucesivamente.
+*proto*: Objeto el cual debe ser el prototipo del nuevo objeto creado.
+
+#### Herencia Prototipal
+ Object es la raíz de todo, por lo tanto tiene un prototipo padre undefined.
+ *hasOwnProperty()* sirve para verificar si una propiedad es parte del objeto o si viene heredada desde su prototype chain.
+
 
 ***
 
@@ -63,3 +73,11 @@ Las funciones *call, apply y bind* son parte del prototipo Function. Toda funci�
 [IFFE](https://developer.mozilla.org/es/docs/Glossary/IIFE)
 
 [NodeList](https://developer.mozilla.org/es/docs/Web/API/NodeList)
+
+[Object.create](https://wiki.developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/create)
+
+[__proto__ vs prototype](https://medium.com/javascript-in-plain-english/proto-vs-prototype-in-js-140b9b9c8cd5)
+
+[object](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/getPrototypeOf )
+
+[Please stop using Classes in JavaScript and become a better developer](https://medium.com/javascript-in-plain-english/please-stop-using-classes-in-javascript-and-become-a-better-developer-a185c9fbede1)
