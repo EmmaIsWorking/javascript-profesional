@@ -83,6 +83,28 @@ Las funciones *call, apply y bind* son parte del prototipo Function. Toda funci�
 - *Schedule Tasks*: Aquí se agregan a la cola, las tareas programadas para su ejecución.
 - *Task Queue*: Aquí se agregan las tares que ya están listas para pasar al stack y ser ejecutadas. El stack debe estar vacío para que esto suceda.
 - *MicroTask Queue*: Aquí se agregan las promesas. Esta Queue es la que tiene mayor prioridad.
+
+### Getters y setters
+Donfiguración del trío **data-getters-setters** para acceder y modificar esos datos. Esta definición es útil cuando algunas operaciones, como la validación, tienen que realizarse en los datos antes de guardarlos o verlos: los captadores y los instaladores proporcionan el hogar perfecto para ello.
+
+Existe una definición más estricta según la cual la encapsulación se realiza para ocultar datos, para que sea inaccesible desde otro código, excepto a través de *getters* y *setters* . De esta forma, no terminamos sobrescribiendo accidentalmente datos importantes con algún otro código en el programa.
+
+### Proxis
+El objeto Proxy se usa para definir un comportamiento personalizado para operaciones fundamentales (por ejemplo, para observar propiedades, cuando se asignan, enumeración, invocación de funciones, etc).
+
+- *handler*: objeto que gestiona las intercepciones a las propiedades del objeto proxy.
+- *traps*: Son los métodos interceptores que proveen acceso a las propiedades. Es análogo al concepto de traps en los sistemas operativos.
+- *target* : El objeto que virtualiza este objeto. Suele usarse como backend de almacenamiento del proxy. Invariantes (semántica que no acepta cambios) respecto a la no extensibilidad del objeto o propiedades no configurables se verifican contra este target.
+
+### Generators
+Los generadores son funciones especiales, pueden pausar su ejecución y luego volver al punto donde se quedaron recordando su scope.
+
+Algunas de sus características:
+
+- Los generadores regresan una función.
+- *Empiezan suspendidos* y se tiene que llamar **next** para que ejecuten.
+- Regresan un value y un boolean done que define si ya terminaron.
+- **yield** es la instrucción que regresa un valor cada vez que llamamos a next y detiene la ejecución del generador.
 ***
 
 ## Enlaces
@@ -101,5 +123,9 @@ Las funciones *call, apply y bind* son parte del prototipo Function. Toda funci�
 [Please stop using Classes in JavaScript and become a better developer](https://medium.com/javascript-in-plain-english/please-stop-using-classes-in-javascript-and-become-a-better-developer-a185c9fbede1)
 
 [AST Explorer](https://astexplorer.net/#/gist/16fc27fc420f705455f2b42b6c804aa1/d9cc7988c2c743d7edfbb3c3b1abed866c975ee4)
+
+[Getters y Setters](https://es.hideout-lastation.com/ultimate-guide-getters)
+
+[Proxi()]https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Proxy
 
 
