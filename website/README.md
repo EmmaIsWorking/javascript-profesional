@@ -116,10 +116,8 @@ Con fetch tenemos algo llamado AbortController que nos permite enviar una señal
 La API Observador de Intersección, provee una vía para, de forma asíncrona, observar cambios en la intersección de un elemento con un elemento ancestro o con el viewport del documento de nivel superior.El API Intersection Observer deja al código registrar una función callback que se ejecuta si un elemento que se desea monitorizar entra o sale de otro elemento (o del viewport), o cuando la cantidad por la que ambos elementos se intersecan cambia en una cantidad requerida. De esta manera, los sitios no necesitan hacer nada sobre el hilo principal para mirar este tipo de intersección entre elementos, y el navegador está libre para optimizar la gestión de intersecciones como le parezca conveniente.
 
 
-
-
-
-
+### VisibilityChange
+El visibilityChange forma parte del API del DOM llamado Page Visibility y nos deja saber si el elemento es visible, pude ser usado para ejecutar una acción cuando cambiamos de pestaña. Así podemos ahorrar batería y mejorar la UX.
 
 ***
 
