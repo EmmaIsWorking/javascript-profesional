@@ -1,3 +1,20 @@
+console.log('Hello Typescript')
+
+function add(a: number, b: number): number{
+  return a + b
+}
+
+const sum = add(2, 3)
+console.log(sum)
+
+
+function name(firstname: string, lastname: string =' Garcia'): string{
+  return `${firstname}${lastname}`
+}
+
+const emmanuel = name('Emmanuel')
+console.log(emmanuel)
+
 // Interfaces
 enum Color {
   Rojo = 'Rojo',

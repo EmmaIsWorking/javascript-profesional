@@ -1,9 +1,34 @@
 # Proyecto del Curso Profesional de JavaScript de la Escuela de JavaScript de Platzi.
 
 ## Dependencias
+Live-server
+
 `npm install -D live-server`
 
-***
+Agrega el script en *package.json*:
+
+`"start": "live-server"`
+
+Parcel
+
+`npm install -D parcel-bundler`
+
+Cuando uses Parcel sustituye el script live-server por:
+
+`"start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"`
+
+agregar 
+
+```
+  "browserlist":[
+    "last 1 Chrome version"
+  ]
+```
+
+Remueve de las dependencias `live-server`
+
+`npm rm live-server`
+`***
 
 ## Conceptos
 *DOM*: representación que hace el navegador de un documento HTML.
@@ -124,9 +149,62 @@ Un service worker es una secuencia de comandos que tu navegador ejecuta en segun
 El motivo por el que esta es una API tan emocionante es que te permite admitir experiencias sin conexión, brindándoles a los programadores control total sobre la experiencia.
 
 
+## TypeScript
+TypeScript extiende la sintaxis de JavaScript, por tanto cualquier código JavaScript existente debería funcionar sin problemas. Está pensado para grandes proyectos, los cuales a través de un compilador de TypeScript se traduce a código JavaScript original. Permite además trabajar sin problemas con famosas librerías de JavaScript como **jQuery**, **MongoDB**, **Node.js**, y **D3.js**, Angular por ejemplo esta realizado con TypeScript.
 
+
+### Tipo
+- boolean. Valor verdadero o falso.
+- number. Números.
+- string. Cadenas de texto.
+- string[]. Arreglo del tipo cadena de texto.
+- Array. Arreglo multi- tipo, acepta cadenas de texto o números.
+- enum. Es un tipo especial llamado enumeración.
+- any. Cualquier tipo.
+- object. Del tipo objeto.
+
+
+Borrar el cache `rm -rf .cache dist`
 
 ***
+
+## Qué es un patrón de diseño
+Son soluciones generales ya probadas dentro de un contexto que las limita a problemas frecuentes que nos encontramos en el desarrollo de software.
+
+### Creacionales.
+Proveen diferentes mecanismos para crear objetos.
+
+- Abstract Factory
+- Builder: Permite la creacion de una variedad de objetos complejos desde un objeto fuente. JQuery usa este patron de diseño
+- Factory Method
+- Prototype
+- Singleton
+  
+  ![singleton-design](https://es.wikipedia.org/wiki/Singleton#/media/Archivo:Singleton_UML_class_diagram.svg))
+
+### Patrones estructurales
+Describen formas de componer objetos para formar nuevas estructuras flexibles y eficientes.
+
+- Adaptar
+- Bridge
+- composite
+- DEcorator
+- Façade
+- Flyweight
+- Proxy
+
+### Compartamiento
+Gestionan algoritmos y responsabilidades entre objetos:
+- Chain of Responsibility
+- Command
+- Iterator
+- Mediator
+- Memento
+- Observer
+- State
+- Strategy
+- Template Method
+- Visitor
 
 ## Enlaces
 [HTMLMediaElement](https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement)
@@ -156,5 +234,7 @@ El motivo por el que esta es una API tan emocionante es que te permite admitir e
 [Service Workers](https://developers.google.com/web/fundamentals/primers/service-workers?hl=es)
 
 [PWAs](https://developer.mozilla.org/es/docs/Web/Progressive_web_apps)
+
+[TypeScript](https://medium.com/javascript-comunidad/typescript-fundamentos-y-ejemplos-b%C3%A1sicos-efd7ddcea90d)
 
 
