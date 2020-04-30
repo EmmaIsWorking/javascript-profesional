@@ -180,7 +180,7 @@ Proveen diferentes mecanismos para crear objetos.
 - Prototype
 - Singleton
 
-  ![singleton-design](https://es.wikipedia.org/wiki/Singleton#/media/Archivo:Singleton_UML_class_diagram.svg))
+  ![singleton-design](http://timeofsoftware.com/wp-content/uploads/2016/12/diagrama-1.png))
 
 ### Patrones estructurales
 Describen formas de componer objetos para formar nuevas estructuras flexibles y eficientes.
