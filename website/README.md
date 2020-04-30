@@ -179,7 +179,7 @@ Proveen diferentes mecanismos para crear objetos.
 - Factory Method
 - Prototype
 - Singleton
-  
+
   ![singleton-design](https://es.wikipedia.org/wiki/Singleton#/media/Archivo:Singleton_UML_class_diagram.svg))
 
 ### Patrones estructurales
