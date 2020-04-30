@@ -105,6 +105,22 @@ Algunas de sus características:
 - *Empiezan suspendidos* y se tiene que llamar **next** para que ejecuten.
 - Regresan un value y un boolean done que define si ya terminaron.
 - **yield** es la instrucción que regresa un valor cada vez que llamamos a next y detiene la ejecución del generador.
+
+
+### Fetch
+La API Fetch proporciona una interfaz JavaScript para acceder y manipular partes del canal HTTP, tales como peticiones y respuestas. También provee un método global fetch() que proporciona una forma fácil y lógica de obtener recursos de forma asíncrona por la red.
+Este tipo de funcionalidad se conseguía previamente haciendo uso de XMLHttpRequest. Fetch proporciona una alternativa mejor que puede ser empleada fácilmente por otras tecnologías como Service Workers. Fetch también aporta un único lugar lógico en el que definir otros conceptos relacionados con HTTP como CORS y extensiones para HTTP.
+Con fetch tenemos algo llamado AbortController que nos permite enviar una señal a una petición en plena ejecución para detenerla.
+
+### IntersectionObeserver
+La API Observador de Intersección, provee una vía para, de forma asíncrona, observar cambios en la intersección de un elemento con un elemento ancestro o con el viewport del documento de nivel superior.El API Intersection Observer deja al código registrar una función callback que se ejecuta si un elemento que se desea monitorizar entra o sale de otro elemento (o del viewport), o cuando la cantidad por la que ambos elementos se intersecan cambia en una cantidad requerida. De esta manera, los sitios no necesitan hacer nada sobre el hilo principal para mirar este tipo de intersección entre elementos, y el navegador está libre para optimizar la gestión de intersecciones como le parezca conveniente.
+
+
+
+
+
+
+
 ***
 
 ## Enlaces
@@ -126,6 +142,10 @@ Algunas de sus características:
 
 [Getters y Setters](https://es.hideout-lastation.com/ultimate-guide-getters)
 
-[Proxi()]https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Proxy
+[Proxi](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Proxy)
+
+[fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch)
+
+[Intersection   Observer](https://developer.mozilla.org/es/docs/Web/API/Intersection_Observer_API)
 
 
