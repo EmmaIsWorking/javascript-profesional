@@ -119,6 +119,13 @@ La API Observador de Intersección, provee una vía para, de forma asíncrona, o
 ### VisibilityChange
 El visibilityChange forma parte del API del DOM llamado Page Visibility y nos deja saber si el elemento es visible, pude ser usado para ejecutar una acción cuando cambiamos de pestaña. Así podemos ahorrar batería y mejorar la UX.
 
+### Service Workers
+Un service worker es una secuencia de comandos que tu navegador ejecuta en segundo plano, separado de una página web, abriéndoles la puerta a funciones que no necesitan una página web ni interacción de usuario. En la actualidad, ya incorporan funciones como notificaciones push y sincronización en segundo plano. En el futuro, los service workers podrían admitir funciones como sincronización periódica o geovallado. 
+El motivo por el que esta es una API tan emocionante es que te permite admitir experiencias sin conexión, brindándoles a los programadores control total sobre la experiencia.
+
+
+
+
 ***
 
 ## Enlaces
@@ -144,6 +151,10 @@ El visibilityChange forma parte del API del DOM llamado Page Visibility y nos de
 
 [fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch)
 
-[Intersection   Observer](https://developer.mozilla.org/es/docs/Web/API/Intersection_Observer_API)
+[Intersection Observer](https://developer.mozilla.org/es/docs/Web/API/Intersection_Observer_API)
+
+[Service Workers](https://developers.google.com/web/fundamentals/primers/service-workers?hl=es)
+
+[PWAs](https://developer.mozilla.org/es/docs/Web/Progressive_web_apps)
 
 
