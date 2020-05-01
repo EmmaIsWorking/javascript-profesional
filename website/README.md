@@ -17,7 +17,11 @@ Cuando uses Parcel sustituye el script live-server por:
 
 `"start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"`
 
-agregar 
+Borrar cache:
+
+`rm -r .cache dist`
+
+agregar
 
 ```
   "browserlist":[
@@ -171,6 +175,12 @@ Borrar el cache `rm -rf .cache dist`
 ## Qué es un patrón de diseño
 Son soluciones generales ya probadas dentro de un contexto que las limita a problemas frecuentes que nos encontramos en el desarrollo de software.
 
+***
+**Principio de abierto/cerrado de diseño de software:**
+
+*Una entiedad de software (clase, módulo, función, etc) debe quedar abierta para su extensión, pero cerrada para su modificación*
+***
+
 ### Creacionales.
 Proveen diferentes mecanismos para crear objetos.
 
@@ -180,15 +190,15 @@ Proveen diferentes mecanismos para crear objetos.
 - Prototype
 - Singleton
 
-  ![singleton-design](http://l4c.me/uploads/cinco-1-1313636564_full550.png)
+  ![singleton-design](https://es.wikipedia.org/wiki/Singleton#/media/Archivo:Singleton_UML_class_diagram.svg)
 
 ### Patrones estructurales
 Describen formas de componer objetos para formar nuevas estructuras flexibles y eficientes.
 
 - Adaptar
 - Bridge
-- composite
-- DEcorator
+- Composite
+- Decorator: El patrón decorator está diseñado para solucionar problemas donde la jerarquía con subclasificación no puede ser aplicada, o se requiere de un gran impacto en todas las clases de la jerarquía con el fin de poder lograr el comportamiento esperado. Decorator permite al usuario añadir nuevas funcionalidades a un objeto existente sin alterar su estructura, mediante la adición de nuevas clases que envuelven a la anterior dándole funcionamiento extra.
 - Façade
 - Flyweight
 - Proxy
@@ -200,11 +210,22 @@ Gestionan algoritmos y responsabilidades entre objetos:
 - Iterator
 - Mediator
 - Memento
-- Observer
+- Observer: el publicador debe notificar a los subscriptores o observadores que algo cambió, y en segundo lugar los subscriptores deben poder subscribirse o de suscribirse del publicador en cualquier momento
+  ![patron-observador](https://storage.googleapis.com/sebastian-gomez-blog.appspot.com/uploads/2018/02/A004581F-4C80-4ADA-A5A5-A298253AF072.png)
+  #### Redux
+    Redux es un patrón de arquitectura de datos que permite manejar el estado de la aplicación de una manera predecible. Está pensado para reducir el número de relaciones entre componentes de la aplicación y mantener un flujo de datos sencillo.
+
+    En resumen, estos son los beneficios que aporta la aplciación del patrón de Redux.
+
+      - Arquitectura escalable de datos
+      - Mayor control sobre el flujo de datos y el estado de la aplicación
+      - Estado global e inmutable
 - State
 - Strategy
 - Template Method
 - Visitor
+
+
 
 ## Enlaces
 [HTMLMediaElement](https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement)
@@ -237,4 +258,4 @@ Gestionan algoritmos y responsabilidades entre objetos:
 
 [TypeScript](https://medium.com/javascript-comunidad/typescript-fundamentos-y-ejemplos-b%C3%A1sicos-efd7ddcea90d)
 
-
+[Redux](https://carlosazaustre.es/como-funciona-redux-conceptos-basicos)
