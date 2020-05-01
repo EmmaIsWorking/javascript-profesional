@@ -259,5 +259,3 @@ Gestionan algoritmos y responsabilidades entre objetos:
 [TypeScript](https://medium.com/javascript-comunidad/typescript-fundamentos-y-ejemplos-b%C3%A1sicos-efd7ddcea90d)
 
 [Redux](https://carlosazaustre.es/como-funciona-redux-conceptos-basicos)
-
-
